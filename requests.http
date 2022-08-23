@@ -1,0 +1,28 @@
+
+# index:
+
+get http://localhost:3000/movies
+
+###
+#show:
+
+get http://localhost:3000/movies/2
+
+###
+#create action:
+post http://localhost:3000/movies
+
+###
+#update action:
+
+patch  http://localhost:3000/movies/4
+Content-Type: application/json
+
+{
+  "name": "Pirates of the  Carrabean",
+  "year": "2011"
+}
+
+###
+#delete action:
+delete http://localhost:3000/movies/6
